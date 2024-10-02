@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 1- tuần2</title>
+    <style>
+        *{
+            padding:0px;
+            margin:2px auto;
+        }
+        .wrapper{
+            width:960px;
+        }
+        header{
+            background-color: lightpink;
+            position: relative;
+        }
+       h1{
+            position:relative;
+            color: rgb(190, 31, 95);
+            text-align: center;
+            text-shadow: rgb(67, 47, 57) 2px 7px 6px;
+            margin: 10px;
+        }
+        header nav{
+            text-align: center;
+            height: 60px;
+            display:flex;
+        }
+        .menu-1 li{
+            text-align: center;
+            display:inline-table;
+            height: 50px;
+            line-height: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+
+        }
+        .menu-1 li a{
+            position:relative;
+            color: rgb(0, 0, 0);
+            display:inline-table;
+            text-decoration:dotted;
+            font-weight: bolder;
+        }
+        .menu-1 li:hover>a{
+            font-size: larger;
+            color:rgb(228, 14, 14);
+        }
+        aside{
+            width: 25%;
+            height:100%;
+            float:right;
+            background-color:rgb(12, 12, 12);
+            color:white;
+            display: flexbox;
+        }
+        aside nav{
+            height:100%;
+            margin-top: 0.5em;
+            margin-bottom: 0.5em;
+            margin-left:  1em;
+            margin-right: 1em;
+            font-size: small;
+            text-align: justify;
+        }
+        .section{
+            width: 75%;
+            height: 100%;
+            top: 100px;
+            float: left;
+            background-color:aliceblue;
+        }
+        .section-left{
+            width:30%;
+            float:left;
+            height:100%;
+            font-size: smaller;
+            text-align: center;
+        }
+        .section-middle{
+            width: 75%;
+            height: 100%;
+            float: left;
+            background-color:rgb(236, 244, 251)
+        }
+        .section-middle p{
+            position:relative;
+            left:10px;
+            top: 10px;
+            text-align: justify;
+            margin-right:  50px;
+        }
+        .sec-middle li{
+            text-align: left;
+            position:relative;
+            left:30px;
+        }
+        .sec-middle p{
+            text-align: left;
+            position:relative;
+            left:10px;
+        }
+
+        .menu-2 li{
+            text-align: left;
+            display:flow-root;
+            height: 30px;
+            line-height: 30px;
+            padding-left: 10px;
+            background-color: blanchedalmond;
+            border-radius: 60px;
+            text-align: left;
+        }
+        .menu-2 li a{
+            position:relative;
+            color: rgb(0, 0, 0);
+            display:inline-table;
+            text-decoration:dotted;
+            font-weight: bolder;
+        }
+        .menu-2 li:hover>a{
+            font-size: larger;
+            color:rgb(218, 135, 53);
+        }
+        h2{
+            font-family:'Courier New', Courier, monospace ;
+            text-align: center;
+            background-color: rgb(235, 159, 194);
+            display:flexbox;
+            position:relative;
+            margin-right: 100px;
+            margin-left: 300px;
+        
+        }
+        .form{
+            text-align: left;
+            display:inline-table;
+            position:relative;
+            margin-right: 100px;
+            margin-left: 300px;
+        }
+        .content{
+            height:550px;
+            width: 960px;
+            background-color: rgb(248, 242, 235);}
+            
+        footer{
+            background-color:lightpink;
+            position:absolute;
+            height: 50px;
+            width: 960px;
+        }
+        footer p {
+            position: absolute;
+            color: white;
+            font-size: large;
+            left:300px;
+            top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h1><i>EXAMPLE CAFE MENU</i></h1>
+        <header>  
+            <nav>
+                <ul class="menu-1">
+                    <li><img src="bài1/icons8-home-50.png" alt="" srcset=""Align="center" width="30" height="30" Vspace="3px" Hspace="4px" > </li>|
+                    <li><a href="">STARTERS</a></li>|
+                    <li><a href="">MAIN-COURSES</a></li>|
+                    <li><a href="">DESSERTS</a></li>| 
+                    <li><a form action="" method="post"id="form1">
+                            <input type="text" name="" id="" placeholder="">
+                            <button type="">GO</button>
+                        </a>
+                    </li>
+            </ul>
+            </nav>
+        </header>
+        <div class="content">
+        <section class="section">
+                <section class="section-left">
+                <nav>
+                    <ul class="menu-2">
+                        <li><a href="">Cafe Latte</a></li>
+                        <li><a href="">Capuchino</a></li>
+                        <li><a href="">Ocean Blue</a></li>
+                        <li><a href="">Ice-cream Cafe</a></li>
+                        <li><a href="">Order Online</a></li>
+                    </ul>
+                <img src="slide3.jpg" alt="" srcset="" Align="center" width="100%" >
+                </nav>
+            </section>
+
+            <section class="sec-middle">
+                <nav>
+                <h2 id="starters">STARTERS</h2>
+
+                <li>Chestnut and Mushroom Goujons <ins style="color:red">(v)</ins></li>
+                <li>Goat Cheese Salad <ins style="color:red">(v)</ins></li>
+                <li style="color:rgb(193, 136, 44)"><b>HONEY SOY CHICKEN KEBAS</b> <ins style="color:red">(V)</ins></li>
+                <li>Seafood Salad <ins style="color:red">(v)</ins></li>
+                <p class="back-to-top"><a href="#top" style="color:red"><b>Back to top</b></a></p>
+                </nav>
+
+                <nav>
+                <h2 id="desserts">DESSERTS</h2>
+   
+                <li>Lemon Sorbet <ins style="color:red">(v)</ins></li>
+                <li>Chocolate Mud Pie <ins style="color:red">(v)</ins></li>
+                <li>Pecan Pie <ins style="color:red">(v)</ins></li>
+                <li> Selection of Fine Chesses from Around the World <ins style="color:red">(v)</li>
+                <p class="back-to-top" ><a href="#top"style="color:red"><b>Back to top</b></a></p>
+                </nav>
+                <nav>
+                <h2>INFORMATION</h2>
+                <br>
+                    <form class="info">
+                    Fisrt name
+                    <input type="text" name="Fisrt-name" value="">
+                    Last name
+                    <input type="text" name="Last-name" value=""><br>
+                    Email
+                    <input type="text" name="Email" value="">
+                    Telephone
+                    <input type="text" name="Tele" value=""><br>
+                      USA
+                      <SELECT name= ‘USA’ tabindex='5'>
+                        <OPTGROUP>
+                        <OPTION value= “”>
+                        <OPTION value= “”>345
+                        <OPTION value= “”>456
+                        </OPTGROUP>
+                    </SELECT>
+                        <br>
+                    <input name= VN type='radio'  value= 'VietNam' tabindex='2'>Vietnamese &nbsp
+                    <input name=FOR type='radio'  value='Foreigner' tabindex='2'>Foreigner<br>
+                    Comment
+                    <textarea id="Comment" name="comment" rows="4" cols="40"></textarea><br><br>
+                    <button type="submit">Submit</button>
+                    &nbsp;
+                    <button type="Reset">Cacel</button>
+                </form>
+                </nav>
+            </section>
+                
+        </section>
+            
+            <aside>
+                <h3>Events</h3>
+                <nav>
+                    <h3>Regular Meetings</h3> 
+                    <img src="meeting.png" alt="" srcset="" Align="center" width="100%">
+                    <p>Host your regular team meetings or activities in the comfort of your own private room. <a href="#top" style="color:brown"><b> Read more...</b></a></p>
+                    <br>
+                    <h3>Product Launches</h3>
+                    <img src="slide5.jpg" alt="" srcset="" Align="middle" width="100%" >
+                    <p>Launch your product with ease in a space that truly fits its image.<a href="#top" style="color:brown"><b> Read more...</b></a></p>
+                </nav>
+
+        </div>
+        <footer>
+            <p><i>ABC Company <sup>&copy;</sup> -12345678 - abccoffee@gamil.com</i></p>
+        </footer>
+    </div>
+</body>
+</html>

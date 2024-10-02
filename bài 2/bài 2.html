@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bài 2 -tuần 2</title>
+    <style>
+        *{
+            padding:0px;
+            margin: 0px auto;
+        }
+        .container{
+            width: 960px;
+        }
+        header{
+            width:960px;
+            position:relative;
+            background-color: darkgray;
+        }
+        header h1{
+            position: absolute;
+            top:60px;
+            left: 170px;
+            color: white;
+        }
+        header h4{
+            position: absolute;
+            top: 100px;
+            left: 170px;
+            color: white
+        }
+        header nav{
+            text-align: left;
+            height: 60px;
+            display:contents;
+        }
+
+        .menu li{
+            display: inline-table;
+            line-height: 50px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        .menu li a{
+            position:relative;
+            color: rgb(0, 0, 0);
+            text-decoration:dotted;
+            font-weight: bolder;
+        }
+        .menu li:hover>a{
+            font-size: larger;
+            color:rgb(236, 233, 233);
+        }
+        
+        .article-trên{
+            width:50%;
+            float:left;
+            height:100%;
+            display: flex;
+        }
+        .article-dưới{
+            width: 50%;
+            height: 100%;
+            float: left;
+            display:flex;
+        }        
+        .article-middle p{
+            text-align: right;
+            position:relative;
+            left:10px;
+        }
+        h3{
+            font-family: 'Courier New', Courier, monospace;
+            float:right;
+            position:relative;
+            display:flex;
+        }
+        h4{
+            color: red;
+            float: right;
+            position:relative;
+        }
+        aside{
+            width: 30%;
+            height:100%;
+            float:right;
+            background-color:rgb(221, 215, 215);
+            color:black;
+            display: flexbox;
+        }
+        aside nav{
+            text-align: justify;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+            margin-left: 20px;
+            margin-top: 40px; 
+            margin-right: 10px;           
+            display: flexbox;
+            color:red;
+        }
+        .aside h3{
+            font-size: larger;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: red;
+            height:100%;
+            width: 100%;
+            text-align: justify;      
+            display: flexbox;
+        }
+        address{
+            text-align: justify;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left:  50px;
+            text-align: justify;
+        }
+
+        .inner-left {
+            width: 35%;
+            float:left;
+        }
+  
+        .inner-left .inner-img {
+            padding: 20px;
+            margin-bottom: 20px;
+            width: 100%;
+  
+        }
+        .content {
+            width: auto;
+            height: 500px;
+        }
+  
+        .inner-left .inner-img img {
+            width: 100%;
+            height: 100%;
+            float:right
+        }
+
+        .inner-center{
+            position: absolute;
+            left: 40%;
+            width: 35%;
+            padding: 20px;
+        }
+        .inner-right h2{
+            margin-bottom: 20px;
+            color: rgb(200, 37, 37);
+        }
+        .center {
+            width: 100%;
+            height: 75%;
+            position: absolute;
+            margin-top: 20px;
+        }
+        .inner-center .inner-content .inner-title h3{
+            font-size: 16px;
+            color: rgb(200, 37, 37);
+            position: relative;
+        }
+        footer{
+            background-color:rgb(151, 145, 146);
+            position:absolute;
+            height: 30px;
+            width: 960px;
+        }
+        footer p {
+            position: absolute;
+            color: white;
+            font-size: large;
+            left:300px;
+            top: 10px;
+        }
+ 
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>  
+            <img src="bài 2/logo.png" alt="">
+            <img src="bài 2/background.png" alt="" style="position: absolute; height:183px; width: 800px">
+            <h1>YOKO'S KITCHEN</h1>
+            <h4>JAPANESE COOKING CLASSES</h4>
+            <nav>
+                <ul class="menu">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">classes</a></li>
+                    <li><a href="">catering</a></li>
+                    <li><a href="">about</a></li>
+                    <li><a href="">contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        <div class="content">
+            <div class="center">
+                <div class="inner-left">
+                    <div class="inner-img">
+                        <img src="OIP.jpeg" alt="">
+                        <h3>Bok Choi</h3>
+                    </div>
+                    <div class="inner-img">
+                        <img src="teriyaki.jpg" alt="">
+                        <h3>Terlyaki Sauce</h3>
+                    </div>
+                </div>
+                <div class="inner-center">
+                    <div class="inner-content">
+                        <div class="inner-title">
+                            <h2>Japanese Vegetarian</h2>
+                            <h3>Five week course in London</h3>
+                        </div>
+                        <p>A five week introduction to traditional Japanese vegetarian meals, teaching you a selection of rice and noodle dishes.</p>
+                    </div>
+        
+                    <div class="inner-content">
+                        <div class="inner-title">
+                            <h2>Sauces Masterclass</h2>
+                            <h3>One day workshop</h3>
+                        </div>
+                        <p>An intensive one-day course looking at how to create the most delicious sauces for use in a range of Japanese cookery.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+                <div class="aside">
+                    <aside class="aside-trên">
+                        <h3>Popular Recipies</h3>
+                        <hr>
+                        <nav>
+                            <p>Yakitori (grilled chicken)</p>
+                            <hr>
+                            <p>Tsukune (minced chicken patties)</p>
+                            <hr>
+                            <p>Okonomiyaki (savory pancakes)</p>
+                            <hr>
+                            <p>Mizutaki (chicken stew)</p>
+                        </nav>
+                        <br>
+                        <hr>
+                        <h3>Contact</h3>
+                            <address> Yoko's Kitchen</address>
+                            <address>Redchurch Street</address> 
+                            <address>London E2 7DP   </address>
+                    </aside>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <p>2011 Yoko's Kitchen</p>
+        </footer>
+    </div>
+
+</body>
+</html>
